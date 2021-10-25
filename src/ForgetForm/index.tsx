@@ -53,7 +53,6 @@ const ForgetForm: React.FC = () => {
     }
 
     return (
-        <div>
             <WrapperForm onSubmit={handleSubmit}>
                 <h1>Resetar senha</h1>
                 <FormInput type="text" onChange={handleChange} value={account.username} name="username" placeholder="username" />
@@ -62,7 +61,6 @@ const ForgetForm: React.FC = () => {
                     <Link  to="/">Voltar para o login</Link>
                 </p>
             </WrapperForm>
-        </div>
     );
 }
 

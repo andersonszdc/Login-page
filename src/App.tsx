@@ -10,7 +10,7 @@ import AmplifyClass from 'aws-amplify';
 const Wrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    div {
+    .action, .art {
         display: inline-flex;
         justify-content: center;
         min-height: 100vh;
@@ -28,7 +28,7 @@ const App = () => (
     <Wrapper>
         <GlobalStyle />
         <BrowserRouter>
-            <div>
+            <div className="action">
                 <Routes>
                     <Route path="/" element={<LoginForm />} />
                     <Route path="/create" element={<CreateForm />} />

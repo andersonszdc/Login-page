@@ -71,7 +71,6 @@ const LoginForm: React.FC = () => {
     },[])
 
     return (
-        <div>
             <WrapperForm onSubmit={handleSubmit}>
                 <h1>Login</h1>
                 <FormInput type="text" onChange={handleChange} value={login.username} name="username" placeholder="username" />
@@ -85,7 +84,6 @@ const LoginForm: React.FC = () => {
                     <Link  to="create">Crie uma conta</Link>
                 </p>
             </WrapperForm>
-        </div>
     );
 }
 
